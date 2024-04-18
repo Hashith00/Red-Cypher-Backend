@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^1.6.8",
     "cors": "^2.8.5",
+    "dockerize-node": "^1.0.1",
     "express": "^4.19.2",
     "nodemon": "^3.1.0",
     "react-router-dom": "^6.22.3"
