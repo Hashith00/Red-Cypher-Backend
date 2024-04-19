@@ -4,7 +4,7 @@ const apiPage = require("./api.js");
 const cors = require("cors");
 
 const corsOption = {
-  origin: "http://localhost:5173",
+  origin: "http://77.37.121.45:8080",
   credentials: false,
   optionSuccessStatus: 200,
 };
