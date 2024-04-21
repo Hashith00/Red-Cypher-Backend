@@ -5,14 +5,14 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from the repository
-                git 'https://github.com/Hashith00/Red-Cypher-FrontEnd'
+                git branch: 'main', url: 'https://github.com/Hashith00/Red-Cypher-Backend'
             }
         }
-        stage('Dockerize') {
+        stage('Dockerize the Application') {
             steps {
                 // Build Docker image
                 script {
-                    docker.build('my-node-app')
+                    docker.build('ode-app')
                 }
             }
         }
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 // Run Docker container
                 script {
-                    docker.image('my-node-app').run('-p 3000:3000')
+                    docker.image('node-app').run('-p 3000:3000')
                 }
             }
         }
