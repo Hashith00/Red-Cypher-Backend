@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from the repository
-                git 'https://github.com/sithuminikaushalya/3818_Amarasinghe'
+                git 'https://github.com/Hashith00/Red-Cypher-FrontEnd'
             }
         }
         stage('Dockerize') {
